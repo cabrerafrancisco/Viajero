@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJERO - Resumen</title>
+    <link rel="stylesheet" href="styles/resumen.css">
+</head>
+<body>
+    <header>
+        <h1>RESUMEN DE TU VIAJE</h1>
+    </header>
+
+    <main>
+        <section class="summary">
+            <!-- Aqui vamos a cargar el resumen de la reserva-->
+        </section>
+
+        <section class="form-section">
+            <h2>Completa tus datos</h2>
+            <form id="user-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+
+                <label for="lastname">Apellido:</label>
+                <input type="text" id="lastname" required>
+                
+                <label for="email">Email:</label>
+                <input type="text" id="email" required>
+
+                <label for="phone">Telefono:</label>
+                <input type="tel" id="phone" required>
+                
+                <button type="submit">Confirmar Reserva</button>
+            </form>
+        </section>
+
+        <button id="cancel">Cancelar viaje</button>
+    </main>
+    
+    <script src="scripts/resumen.js"></script>
+</body>
+</html>

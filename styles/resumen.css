@@ -1,0 +1,117 @@
+:root {
+    --color1: #f2502c;
+    --color2: #cad17a;
+    --color3: #fcf59b;
+    --color4: #91c494;
+    --color5: #c42311;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--color3); /* Color 3 */
+    color: #0b0b0d;
+    text-align: center;
+}
+
+header {
+    background-color: var(--color1);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* resumen de la reserva */
+.summary {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.summary h2 {
+    color:  var(--color5);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* aqui editamos el formulario */
+.form-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-section h2 {
+    font-size: 20px;
+    color: #c42311;
+    margin-bottom: 15px;
+}
+
+.form-section label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* btnde confirmar */
+.form-section button {
+    background-color:  var(--color2); 
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.form-section button:hover {
+    background-color:  var(--color4);
+}
+
+/* Botón de cancelar */
+#cancel {
+    background-color:  var(--color5);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#cancel:hover {
+    background-color:  var(--color1); 
+}
