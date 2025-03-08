@@ -28,8 +28,9 @@ function renderCityDetails(city) {
         <h2>${city.city}</h2>
         <img src="${city.img}" alt="${city.city}">
         <p>${city.desc}</p>
+        <br></br>
         <h3>Precio base: $${city.price}</h3>
-        
+        <br></br>
         <h3>Hoteles disponibles:</h3>
         <select id="hotel-select">
             ${city.hotels.map(hotel => `<option value="${hotel.price}">${hotel.name} - $${hotel.price} por noche</option>`).join("")}
