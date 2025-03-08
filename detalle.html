@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajero - Detalle</title>
+    <link rel="stylesheet" href="styles/detalle.css">
+</head>
+<body>
+    <header>
+        <h1>Detalle del Viaje</h1>
+    </header>
+
+    <main>
+        <section class="city-info">
+            <!-- Aquí se cargará cunado busnca el CITy INFO -->
+        </section>
+
+        <section class="reservation">
+            <h2>Reserva tu viaje</h2>
+            <label for="persons">Cantidad de personas:</label>
+            <input type="number" id="persons" min="1" value="1">
+
+            <label for="nights">Cantidad de noches:</label>
+            <input type="number" id="nights" min="1" value="1">
+
+            <h3>Total: $<span id="total-price">0</span></h3>
+
+            <button id="continue">Continuar</button>
+        </section>
+    </main>
+
+    <script src="scripts/detalle.js"></script>
+</body>
+</html>
