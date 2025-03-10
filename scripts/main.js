@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("data/place.json")
         .then(Response => Response.json())
         .then(data => renderCities(data))
-        .then(error => console.error("Error al cargar ciudades" , error));
+        .catch(error => console.error("Error al cargar ciudades" , error));
 });
 
 //aqui renderizamos las card
