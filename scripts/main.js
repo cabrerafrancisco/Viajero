@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(error => console.error("Error al cargar ciudades" , error));
 });
 
+//aqui renderizamos las card
 function renderCities(cities) {
     const citiesContainer = document.querySelector(".cities");
 
@@ -24,6 +25,7 @@ function renderCities(cities) {
     });
 }
 
+//cuando hace clic en ver mas el ID se guardas en localStorage
 function selectCity(cityId){
     localStorage.setItem("selectedCity", cityId);
     window.location.href = "detalle.html";

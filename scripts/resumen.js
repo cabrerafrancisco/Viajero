@@ -25,6 +25,7 @@ function renderSummary(reservation) {
 //boton cancelar reserva
 document.getElementById("cancel").addEventListener("click" , () => {
     localStorage.removeItem("reservation");
+    localStorage.removeItem("selectedCity");
     alert("Reserva cancelada...");
     window.location.href = "index.html";
 })
